@@ -1,7 +1,17 @@
 import logo from './logo.svg'
 import './App.css'
+import React, { useState } from 'react';
+
 
 const App = () => {
+
+  const [msg, setMsg] = useState('')
+
+  const handleClick = async () => 
+  {
+    const data = await fetch('/api/my-app')
+  }
+
   return (
     <div className='App'>
       <header className='App-header'>
@@ -9,9 +19,10 @@ const App = () => {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        <button>
+        <button onClick={handleClick}>
           say Hello
         </button>
+        <p>{msg}</p>
       </header>
     </div>
   )
