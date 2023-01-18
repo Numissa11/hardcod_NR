@@ -13,6 +13,14 @@ const App = () => {
     const json = await data.json()
     const msg = json.msg
     setMsg(msg)
+    
+     /*    back:
+
+            res.send({
+                msg: 'Hi hi my friends ! '
+            })         
+    */
+
   }
 
   return (
