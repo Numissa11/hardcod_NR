@@ -6,7 +6,7 @@ app.use(express.json())
 
 app.get('/api/my-app', (req, res) => {
     res.send({
-        msg: 'Hello my friends ! '
+        msg: 'Hi hi my friends ! '
     })
 })
 

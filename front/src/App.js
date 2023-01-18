@@ -9,7 +9,10 @@ const App = () => {
 
   const handleClick = async () => 
   {
-    const data = await fetch('/api/my-app')
+    const data = await window.fetch('/api/my-app')
+    const json = await data.json()
+    const msg = json.msg
+    setMsg(msg)
   }
 
   return (
